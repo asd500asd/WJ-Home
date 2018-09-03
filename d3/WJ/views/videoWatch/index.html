@@ -1,0 +1,134 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/video_watch.css" />
+    <script src="../../lib/jquery-2.1.3.min.js"></script>
+    <script src="../../lib/echarts.js"></script>
+    <script src="../../lib/neimenggu.js"></script>
+    <script src="../../lib/d3/d3.min.js"></script>
+</head>
+
+<body>
+<div class="video_watch" id="video_watch">
+    <div class="title">
+        <span class="title_line_left"></span>
+        <span class="title_name">全区视频动态监控</span>
+        <span class="title_line_right"></span>
+    </div>
+    <div class="thermodynamic_chart">
+        <div class="chart" style="width: 90%;height: 90%;"></div>
+        <!--<img src="neimenggu.png" class="neimenggu"/>-->
+        <ul class="visual_map">
+            <li>100000</li>
+            <li>80000</li>
+            <li>60000</li>
+            <li>40000</li>
+            <li>20000</li>
+            <li>0</li>
+        </ul>
+    </div>
+    <div class="rigth_chart">
+        <div class="bar_chart" style="width: 100%;height: 40%;">
+            <div class="title">
+                全区视频监控情况统计
+            </div>
+        </div>
+        <div class="funnel_chart">
+            <div class="title">
+                <span>全区视频监控在线率 TOP5</span>
+            </div>
+            <div class="triangle triangle0">
+                <div class="hexagon">
+                    <div class="hiveTop"></div>
+                    <div class="hiveCenter"></div>
+                    <div class="hiveBottom"></div>
+                    <div class="hex"></div>
+                    <div class="line">
+                        <span class="point"></span>
+                        <span class="percent">89.6%</span>
+                        <span class="city">[ 呼和浩特 ]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle triangle1">
+                <div class="hexagon">
+                    <div class="hiveTop"></div>
+                    <div class="hiveCenter"></div>
+                    <div class="hiveBottom"></div>
+                    <div class="hex"></div>
+                    <div class="line">
+                        <span class="point"></span>
+                        <span class="percent">85.4%</span>
+                        <span class="city">[ 包头 ]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle triangle2">
+                <div class="hexagon">
+                    <div class="hiveTop"></div>
+                    <div class="hiveCenter"></div>
+                    <div class="hiveBottom"></div>
+                    <div class="hex"></div>
+                    <div class="line">
+                        <span class="point"></span>
+                        <span class="percent">82.3%</span>
+                        <span class="city">[ 鄂尔多斯 ]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle triangle3">
+                <div class="hexagon">
+                    <div class="hiveTop"></div>
+                    <div class="hiveCenter"></div>
+                    <div class="hiveBottom"></div>
+                    <div class="hex"></div>
+                    <div class="line">
+                        <span class="point"></span>
+                        <span class="percent">81.8%</span>
+                        <span class="city">[ 赤峰 ]</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="triangle triangle4">
+                <div class="hexagon">
+                    <div class="hiveTop"></div>
+                    <div class="hiveCenter"></div>
+                    <div class="hiveBottom"></div>
+                    <div class="hex"></div>
+                    <div class="line">
+                        <span class="point"></span>
+                        <span class="percent">80.1%</span>
+                        <span class="city">[ 呼伦贝尔 ]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data-panel">
+            <div class="item online">
+                <span>在线：</span>
+                <span class="value">**</span>
+            </div>
+            <div class="item offline">
+                <span>离线：</span>
+                <span class="value">**</span>
+            </div>
+            <div class="item ratio">
+                <span>离线率：</span>
+                <span class="value">**</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/init.js"></script>
+<script src="js/startup.js"></script>
+<script src="js/core/data.js"></script>
+<script src="js/core/bar.js"></script>
+<script src="js/data.js"></script>
+<script src="js/videoWatch.js"></script>
+</body>
+
+</html>

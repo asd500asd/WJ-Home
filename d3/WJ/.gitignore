@@ -1,0 +1,8 @@
+### Intellij IDEA project config file
+.idea/
+#conf/
+node_modules/
+/conf/conf.js
+/conf/dev-config.js
+/dist/
+/dist-mobile/

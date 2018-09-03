@@ -1,0 +1,85 @@
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>成品资源</title>
+    <link rel="stylesheet" type="text/css" href="css/pro-res.css">
+    <link rel="stylesheet" href="css/style-ccl.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap-datetimepicker/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+    <script type="text/javascript" src="../../lib/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../../lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../lib/CommentCoreLibrary.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-datetimepicker/bootstrap.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+
+<body>
+<div class="pro-main-container">
+    <div id='my-player' class='abp' style="position: relative; width: 100%; height: 947px;z-index: 5;">
+        <div id='pro-danmaku-stage' class='container'></div>
+    </div>
+</div>
+<!--时间轴-->
+<div class="con-time-axis" style="z-index: 10;">
+    <div class="axis-container">
+        <img src="images/sr-ct-bac14.png" class="track-bg" />
+        <div class="track">
+            <div class="indicator" id="indicator-1">
+                <img src="images/sr-ct-bac15.png">
+            </div>
+            <div class="indicator" id="indicator-2">
+                <img src="images/sr-ct-bac15.png">
+            </div>
+            <div class="indicator-mid"></div>
+            <div class="labels">
+                <div class="label" id="label-0"></div>
+                <div class="label" id="label-1"></div>
+                <div class="label" id="label-2"></div>
+                <div class="label" id="label-3"></div>
+                <div class="label" id="label-4"></div>
+                <div class="label" id="label-5"></div>
+                <div class="label" id="label-6"></div>
+                <div class="label" id="label-7"></div>
+                <div class="label" id="label-8"></div>
+                <div class="label" id="label-9"></div>
+                <div class="label" id="label-10"></div>
+                <div class="label" id="label-11"></div>
+                <div class="label" id="label-12"></div>
+                <div class="label" id="label-13"></div>
+                <div class="label" id="label-14"></div>
+                <div class="label" id="label-15"></div>
+                <div class="label" id="label-16"></div>
+                <div class="label" id="label-17"></div>
+                <div class="label" id="label-18"></div>
+                <div class="label" id="label-19"></div>
+                <div class="label" id="label-20"></div>
+                <div class="label" id="label-21"></div>
+                <div class="label" id="label-22"></div>
+            </div>
+        </div>
+        <!-- <div class="operation" style="position: absolute; left: 400px; top: 51px;">
+            <button id="btn-load" type="button">load</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn-send" type="button">send</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn-stop" type="button">stop</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn-loop" type="button">loop</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn-reset" type="button">reset</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="btn-continue" type="button">continue</button>
+        </div> -->
+    </div>
+    <div class="input-group date datepicker-container">
+        <input class="form-control" size="16" type="text" value="2016.01.20" readonly>
+        <br><span class="input-group-addon icon"><span class="myicon" style="width: 13px; height: 7px;"></span></span>
+    </div>
+</div>
+<!--end 时间轴-->
+<script src="js/init.js"></script>
+<script src="js/startup2.js"></script>
+<script src="js/core/danmaku.js"></script>
+<script src="js/core/timeAxis.js"></script>
+<script src="js/core/datepicker.js"></script>
+</body>
+
+</html>

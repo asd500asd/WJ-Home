@@ -1,0 +1,98 @@
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.transportation {
+    width: 1920px;
+    height: 1080px;
+    background: url('image/bg.png');
+    background-size: 1920px;
+    border-top: 1px solid #003C5A;
+    position: relative;
+}
+.transportation #main0 {
+    position: absolute;
+    width: 49%;
+    height: 50%;
+    left: 1%;
+    top: 30px;
+    z-index: 3;
+}
+.transportation #main {
+    position: absolute;
+    width: 49%;
+    height: 50%;
+    left: 50%;
+    top: 30px;
+    z-index: 3;
+}
+.transportation #main1 {
+    position: absolute;
+    width: 49%;
+    height: 50%;
+    left: 50%;
+    top: 49%;
+    z-index: 1;
+}
+.transportation #partCat {
+    position: absolute;
+    width: 49%;
+    height: 50%;
+    left: 1%;
+    top: 49%;
+    z-index: 1;
+}
+.transportation button{
+  position: absolute;
+  left: 94%;
+  top: 6%;
+  width: 70px;
+  height: 25px;
+  color: green;
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 16px;
+  border: none;
+  z-index: 99;
+}
+.transportation span:nth-child(1){
+  position: absolute;
+  left: 4%;
+  top: 5%;
+  color: white;
+  font-size: 16px;
+}
+.transportation span:nth-child(2){
+  position: absolute;
+  left: 43%;
+  top: 5%;
+  color: white;
+  font-size: 16px;
+}
+.transportation span:nth-child(3){
+  position: absolute;
+  left: 51%;
+  top: 5%;
+  color: white;
+  font-size: 16px;
+}
+.transportation span:nth-child(4){
+  position: absolute;
+  left: 2%;
+  top: 51%;
+  color: white;
+  font-size: 16px;
+}
+.transportation span:nth-child(5){
+  position: absolute;
+  left: 51%;
+  top: 51%;
+  color: white;
+  font-size: 16px;
+}
+.transportation img{
+    position: absolute;
+    left: 90%;
+    top: 2%;
+}

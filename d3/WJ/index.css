@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.line {
+    width:1030px;
+    height:1px;
+    margin-left: 3%;
+    margin-top: 1%;
+    background-color: #333;
+}
+
+
+/*外侧容器*/
+
+#container {
+    width: 97%;
+    height: 98%;
+    margin-left: 3%;
+    padding-top: 2%;
+}
+
+
+/*子容器*/
+
+.containerC {
+    display: block;
+    width: 330px;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+
+/*统一图片大小*/
+
+img {
+    width: 330px;
+    height: 180px;
+
+
+}
+
+strong {
+    display: block;
+    font-size: 15px;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+span{
+    font-size: 22px;
+}

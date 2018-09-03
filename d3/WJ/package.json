@@ -1,0 +1,40 @@
+{
+    "name": "WJ",
+    "version": "1.0.0",
+    "description": "WJ",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "echo \"Error: no test specified\" && exit 1",
+        "build": "gulp build"
+    },
+    "keywords": [
+        "gulp",
+        "browser-sync"
+    ],
+    "author": "wangjie",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.24.4",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-changed": "^3.2.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-clean-css": "^3.9.4",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.5.0",
+        "gulp-ejs": "^3.1.3",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-jshint": "^2.1.0",
+        "gulp-less": "^3.5.0",
+        "gulp-make-css-url-version": "0.0.13",
+        "gulp-rename": "^1.2.3",
+        "gulp-uglify": "^3.0.0",
+        "http-proxy-middleware": "^0.18.0",
+        "jshint": "^2.9.5",
+        "run-sequence": "^2.2.1"
+    },
+    "dependencies": {
+        "gulp-htmlmin": "^4.0.0"
+    }
+}

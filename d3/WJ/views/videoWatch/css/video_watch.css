@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+body {
+    /*overflow: hidden;*/
+    color: white;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑", "Arial";
+    background-color: rgb(0, 64, 111);
+}
+
+.video_watch {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    /*font-size: 35px;*/
+    /*background-color: #023757;*/
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-position: center;
+    font-weight: normal;
+}
+
+.video_watch .title {
+    text-align: center;
+    color: #25f6f1;
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.video_watch .title .title_name {
+    margin: 0 20px;
+}
+
+.video_watch .title .title_line_left,
+.video_watch .title .title_line_right {
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+    vertical-align: middle;
+    background: linear-gradient(to right, #0c131d, #25f6f1);
+    /* 标准的语法 */
+}
+
+.video_watch .title .title_line_right {
+    background: linear-gradient(to left, #0c131d, #25f6f1);
+    /* 标准的语法 */
+}
+
+.video_watch .thermodynamic_chart {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 60%;
+    text-align: center;
+}
+
+.video_watch .neimenggu {
+    position: absolute;
+    z-index: -1;
+    width: 84%;
+    left: 6%;
+    top: 6%;
+}
+
+.video_watch .thermodynamic_chart .chart {
+    margin: 0 5%;
+}
+
+.video_watch .thermodynamic_chart .visual_map {
+    position: absolute;
+    color: #fff;
+    left: 18%;
+    top: 10%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.video_watch .thermodynamic_chart .visual_map li {
+    list-style: none;
+    height: 45px;
+}
+
+.video_watch .rigth_chart {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 60px;
+    right: 0;
+    margin-right: 1%;
+}
+
+.video_watch .rigth_chart .funnel_chart .triangle {
+    width: 0;
+    height: 0;
+    border-width: 0 80px 320px;
+    border-style: solid;
+    border-color: transparent transparent #064b57;
+    position: absolute;
+}
+
+.video_watch .rigth_chart .funnel_chart .title {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 0;
+    position: relative;
+    top: 140px;
+}
+
+.video_watch .rigth_chart .funnel_chart .triangle1 {
+	border-width: 0 64px 256px;
+	border-color: transparent transparent #037d8b;
+	/*透明 透明  灰*/
+	left: 16px;
+	bottom: 14px;
+}
+
+.video_watch .rigth_chart .funnel_chart .triangle2 {
+	border-width: 0 48px 192px;
+	border-color: transparent transparent #00abba;
+	/*透明 透明  灰*/
+	left: 32px;
+	bottom: 14px;
+}
+
+.video_watch .rigth_chart .funnel_chart .triangle3 {
+	border-width: 0 32px 128px;
+	border-color: transparent transparent #00cede;
+	/*透明 透明  灰*/
+	left: 48px;
+	bottom: 14px;
+}
+
+.video_watch .rigth_chart .funnel_chart .triangle4 {
+	border-width: 0 16px 64px;
+	border-color: transparent transparent #00f1ff;
+	/*透明 透明  灰*/
+	left: 64px;
+	bottom: 14px;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon {
+    position: absolute;
+    left: -7px;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hiveTop {
+    width: 0;
+    border: 8px solid #00f1ff;
+    border-top: none;
+    border-bottom: 4px solid #00f1ff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hiveCenter {
+    width: 14px;
+    height: 8px;
+    background-color: #00f1ff;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hiveBottom {
+    width: 0;
+    border: 4px solid #00f1ff;
+    border-bottom: none;
+    border-top: 4px solid #00f1ff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hex {
+    position: absolute;
+    z-index: 1;
+    left: -4px;
+    top: 1px;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hex,
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:before,
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:after {
+    border: 1px solid;
+    border-color: #00f1ff;
+    border-top: none;
+    border-bottom: none;
+    height: 13px;
+    width: 20px;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:after,
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    z-index: -1;
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:before {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.video_watch .rigth_chart .funnel_chart .hexagon .hex:after {
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.video_watch .rigth_chart .funnel_chart .line {
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: #00f1ff;
+    margin-left: 20px;
+    top: 6px;
+}
+
+.video_watch .rigth_chart .funnel_chart .line .point {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    background: #00f1ff;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px #00f1ff;
+}
+
+.video_watch .rigth_chart .funnel_chart .line .percent {
+    position: absolute;
+    left: 110%;
+    top: -15px;
+    color: #00f1ff;
+    font-size: 22px;
+}
+
+.video_watch .rigth_chart .funnel_chart .line .city {
+    position: absolute;
+    left: 150%;
+    top: -10px;
+    color: #dedfe0;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+    width: 100px;
+}
+
+.video_watch .rigth_chart .funnel_chart {
+    overflow: hidden;
+    height: 59%;
+}
+
+@keyframes leftToRight {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+@keyframes bottomToTop {
+    from {
+        height: 320px;
+        opacity: 0;
+    }
+    to {
+        height: 0;
+        opacity: 1;
+    }
+}
+
+.axis-container path,
+.axis-container line {
+    fill: none;
+    stroke: #2b313a;
+    shape-rendering: crispEdges;
+}
+
+.axis-container text {
+    font-family: sans-serif;
+    /*font-size: 20px;*/
+    fill: #fff;
+}
+
+.bar-chart-explain {
+    font-family: sans-serif;
+    font-size: 16px;
+    fill: #25f6f1;
+}
+
+.xaxis .tick text {
+    /*writing-mode: tb;*/
+    text-anchor: end;
+    /*letter-spacing: 2;*/
+    font-size: 20;
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+.yaxis-left .domain,
+.yaxis-right .domain {
+    visibility: hidden;
+}
+
+.divide-dots-container circle {
+    fill: #868a8f;
+}
+
+.divide-line-container .divide-line {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.3);
+}
+
+.data-panel {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    width: 200px;
+    /* height: 200px; */
+    background-color: rgba(4, 38, 59, 0.7);
+    display: none;
+    /* padding-bottom: 20px; */
+    font-size: 20px;
+    border: 1px solid #16baff;
+}
+
+.data-panel .item {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.bar_chart .title {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+.max-value {
+	text-anchor: middle;
+	font-size: 20;
+	fill: #fff;
+}

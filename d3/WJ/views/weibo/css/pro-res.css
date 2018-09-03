@@ -1,0 +1,469 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+table {
+    font-size: 14px;
+}
+
+body {
+    color: white;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑", "Arial";
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.pro-main-container {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: url("../images/sr-bac01.jpg") no-repeat center top;
+    background-size: cover;
+}
+
+
+/* 底部时间轴部分 */
+
+.con-time-axis {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 133px;
+}
+
+.axis-container {
+    position: relative;
+    margin: auto;
+    /*margin: 0 auto;
+    width: 1846px;*/
+}
+
+.axis-container .track-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.axis-container .track {
+    position: relative;
+    /*width: 100%;
+        height: 30%;*/
+    display: block;
+    /*top: 18%;*/
+    /*background-color: #B96D0F;
+        cursor: pointer;*/
+}
+
+.axis-container .track .indicator {
+    position: absolute;
+    /*width: 16px;
+        height: 16px;*/
+    /*background-color: rgba(255, 255, 255, 0.23);;*/
+    overflow: visible;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.axis-container .track .indicator img {
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    left: -40%;
+}
+
+.axis-container .track .labels {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.axis-container .track .labels .label {
+    float: left;
+    /*width: 24%;*/
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.axis-container .track .indicator-mid {
+    position: absolute;
+    /*width: 80px;*/
+    /*height: 40%;*/
+    /*top: 4px;*/
+    background-color: #8AB5D2;
+}
+
+.abp .container {
+    width: 100%;
+    height: 100%;
+}
+
+.info-bar {
+    position: relative;
+    float: left;
+    height: 75px;
+    border-radius: 50px;
+    border: 1px solid #5785b4;
+    background-color: rgba(87, 133, 180, 0.5);
+    font-size: 25px;
+    font-family: "Microsoft YaHei", "微软雅黑", "Arial";
+    overflow: visible;
+}
+
+.info-bar .info-bar-text {
+    position: relative;
+    width: auto;
+    height: 100%;
+    line-height: 75px;
+    padding-left: 35px;
+    color: #fff;
+    padding-right: 80px;
+}
+
+.info-bar .info-bar-headicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 63px;
+    height: 63px;
+    margin: 6px 4px 0 0;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.info-bar-highlight {
+    background-color: rgba(53, 84, 169, 0.51);
+    border-color: #fff;
+    font-size: 25px;
+    animation: zoomIn 0.4s linear;
+    -moz-animation: zoomIn 0.4s linear;
+    -webkit-animation: zoomIn 0.4s linear;
+    -o-animation: zoomIn 0.4s linear;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@-moz-keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@-o-keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
+
+.info-bar-normal {
+    animation: zoomOut 0.3s linear;
+    -moz-animation: zoomOut 0.3s linear;
+    -webkit-animation: zoomOut 0.3s linear;
+    -o-animation: zoomOut 0.3s linear;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes zoomOut {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes zoomOut {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes zoomOut {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.info-bar .info-bar-detail {
+    position: relative;
+    float: right;
+    margin-right: -77px;
+    margin-top: -10px;
+    /*padding-top: 38px;*/
+    width: 213px;
+    height: 248px;
+    z-index: 5;
+    display: none;
+}
+
+
+/*.info-bar-highlight .info-bar-detail {
+        display: block;
+    }*/
+
+
+/*.info-bar .info-bar-detail-title {
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 28px;
+}
+
+.info-bar .info-bar-detail .info-bar-intro {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.info-bar .info-bar-intro .icon-bg {
+    position: absolute;
+    left: 50%;
+    margin-left: -39px;
+    width: 78px;
+    height: 78px;
+    z-index: 1;
+}
+
+.info-bar .info-bar-intro .icon-pic {
+    width: 78px;
+    height: 78px;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.detail-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.info-bar-intro .intro-name {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.info-bar-intro .intro-sp {
+    font-size: 13px;
+    color: #e5f0ff;
+    line-height: 21px;
+    padding-left: 25px;
+}*/
+
+.danmaku-highlight {
+    z-index: 5;
+}
+
+.con-time-axis .datepicker-container {
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    width: 100px;
+    text-align: center;
+    transform-origin: left top 0px;
+    -webkit-transform-origin: left top 0px;
+    /*transform: scale(0.738889);*/
+}
+
+.con-time-axis .datepicker-container input {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 0;
+    color: #ff8d5e;
+    line-height: 32px;
+    text-align: center;
+}
+
+.con-time-axis .datepicker-container .icon {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    height: 20px;
+    border: 0;
+    background-color: transparent;
+}
+
+.con-time-axis .datepicker-container .myicon {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: url("../images/sr-main-icon01.png") no-repeat;
+}
+
+.info-bar .info-bar-detail .detail-pointer {
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    top: 0;
+    left: 0;
+}
+
+.info-bar .info-bar-detail .detail-pointer img {
+    display: block;
+    width: 27px;
+    height: 29px;
+    margin: auto;
+}
+
+.info-bar .info-bar-detail .detail-info {
+    position: absolute;
+    width: 100%;
+    height: 219px;
+    top: 29px;
+    left: 0;
+}
+
+.info-bar .info-bar-detail .detail-info img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 219px;
+    z-index: -1;
+}
+
+.info-bar .info-bar-detail .detail-info .detail-info-title {
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+}
+
+.info-bar .info-bar-detail .detail-info .detail-info-intro {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.info-bar .detail-info .detail-info-intro .headicon {}
+
+.info-bar .detail-info .detail-info-intro .icon-bg {
+    position: absolute;
+    left: 50%;
+    margin-left: -39px;
+    width: 78px;
+    height: 78px;
+    z-index: 1;
+}
+
+.info-bar .detail-info .detail-info-intro .icon-pic {
+    width: 78px;
+    height: 78px;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.info-bar .detail-info .detail-info-intro .intro-name {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.info-bar .detail-info .detail-info-intro .intro-sp {
+    font-size: 13px;
+    color: #e5f0ff;
+    line-height: 21px;
+    padding-left: 25px;
+}
+
+.info-bar .show-up {
+    margin-top: -320px!important;
+}
+
+.info-bar .show-up .detail-pointer {
+    top: 219px!important;
+}
+
+.info-bar .show-up .detail-pointer img {
+    transform: rotate(180deg);
+}
+
+.info-bar .show-up .detail-info {
+    top: 0!important;
+}
