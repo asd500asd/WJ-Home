@@ -1,6 +1,8 @@
 # WJ-Home
 个人项目
 
+项目地址： http://chart.initialw.club/ 
+
 ######  gulp文件夹内放置通用的gulp.js配置，可方便用于小型项目使用，大项目还是用webpack
 
 
