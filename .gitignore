@@ -6,3 +6,4 @@ node_modules/
 /conf/dev-config.js
 /dist/
 /dist-mobile/
+.history
